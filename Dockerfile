@@ -7,4 +7,5 @@ WORKDIR /apps
 
 RUN git clone https://github.com/chetan03css/calculatorapp.git
 WORKDIR calculatorapp
-ENTRYPOINT setup.sh
+COPY setup.sh .
+RUN ./setup.sh
